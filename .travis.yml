@@ -1,0 +1,21 @@
+language: perl
+
+before_install:
+    - sudo apt-get update -q
+    - sudo apt-get install -y libgmp-dev
+    - cpanm Test::Pod # optional dependency
+
+install:
+    - cpanm -v --installdeps --notest .
+
+script: "perl Build.PL; ./Build test"
+# branches:
+#   only:
+#     - master
+notifications:
+  recipients:
+    - duke@leto.net
+  email:
+    on_success: change
+    on_failure: always
+#env:
