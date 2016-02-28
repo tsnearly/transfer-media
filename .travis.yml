@@ -14,7 +14,7 @@ script: "perl Build.PL; ./Build test"
 #     - master
 notifications:
   recipients:
-    - duke@leto.net
+    - seetigerlearn@gmail.com
   email:
     on_success: change
     on_failure: always
