@@ -1,17 +1,22 @@
 use strict;
 use warnings;
 use Module::Build;
+use ExtUtils::MakeMaker;
 
 # NOTE: This Build.PL is to make it easier for people without dzil
 # to install dependencies/etc. It may be out of sync with dist.ini
 # and dist_version needs to be manually updated, for now.
 
+usr 
+
+my ($mm) = $ExtUtils::MakeMaker::VERSION =~ /^([^_]+)/;
+
+
 my $builder = Module::Build->new(
     module_name         => 'Media: Management',
     license             => 'perl',
     dist_author         => 'Tony Snearly <seetigerlearn@gmail.com>',
-    dist_abstract       => 'Media Files AutoManager',
-    dist_version        => 'lib/Media/Management.pm',
+    dist_version        => 'Media/Management.pm',
     include_dirs        => '',
     build_requires => {
         'Test::More'      => 0,

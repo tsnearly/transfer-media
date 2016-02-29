@@ -1,7 +1,8 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Media-Management
-version_from: lib/Media/Management.pm
+version:      0.43
+version_from: Media/Management.pm
 installdirs:  site
 requires:
     Filter::Simple:                0.78
