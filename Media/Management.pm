@@ -7,5 +7,5 @@ use 5.006_001;
 use strict;
 use warnings;
 
-our ($VERSION, $DEBUG, $CALLER);
-$VERSION = '0.10';
+
+our $VERSION           = '0.10';
