@@ -7,10 +7,8 @@ use ExtUtils::MakeMaker;
 # to install dependencies/etc. It may be out of sync with dist.ini
 # and dist_version needs to be manually updated, for now.
 
-usr 
 
 my ($mm) = $ExtUtils::MakeMaker::VERSION =~ /^([^_]+)/;
-
 
 my $builder = Module::Build->new(
     module_name         => 'Media: Management',
