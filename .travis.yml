@@ -9,9 +9,9 @@ install:
     - cpanm -v --installdeps --notest .
 
 script: "perl Build.PL; ./Build test"
-# branches:
-#   only:
-#     - master
+ branches:
+   only:
+     - master
 notifications:
   recipients:
     - seetigerlearn@gmail.com
